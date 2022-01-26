@@ -1,6 +1,7 @@
 //using selectors inside the element
 const questions = document.querySelectorAll(".question");
 
+//to call function for every element 
 questions.forEach(function (question) {
   const btn = question.querySelector(".question-btn");
   // console.log(btn);
