@@ -1,3 +1,4 @@
+// set months to call month
 const months = [
   'January',
   'February',
@@ -21,10 +22,12 @@ const weekdays = [
   'Friday',
   'Saturday',
 ];
+// get items
 const giveaway = document.querySelector('.giveaway');
 const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
+//create variable within a scop
 let tempDate = new Date();
 let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
@@ -34,6 +37,7 @@ const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
 // let futureDate = new Date(2020, 3, 24, 11, 30, 0);
 
+// create variable with constant for year month week
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
