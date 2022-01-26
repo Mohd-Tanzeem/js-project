@@ -1,3 +1,4 @@
+//set information for menu
 const menu = [
   {
     id: 1,
